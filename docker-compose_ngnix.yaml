@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  nginx:
+    image: nginx:latest
+    container_name: servidor-nginx
+    ports:
+      - "80:80"
+    volumes:
+      -   C:\trabalho:/usr/share/nginx/html
+      
